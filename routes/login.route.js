@@ -22,7 +22,7 @@ app.post("/", async (req, res) => {
       if (userdata) {
         const token = jwt.sign(
           { id: userdata._id, name: userdata.name },
-          "secret123",
+          "ajay1234",
           { expiresIn: "1 day" }
         );
         console.log(token)
